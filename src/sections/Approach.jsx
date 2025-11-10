@@ -7,16 +7,16 @@ import { CanvasRevealEffect } from "../components/CanvasRevealEffect";
 CanvasRevealEffect;
 const Approach = () => {
   return (
-    <section className="c-space section-spacing">
-      <h2 className="text-heading">My Approach</h2>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
+    <section className="c-space my-30">
+      <h2 className="text-heading ">My Approach</h2>
+      <div className="my-12 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
           title="Planning & Stratergy"
           icon={<AceternityIcon order="Phase 1" />}
           description="We'll collaborate to map out your website's goals, target audience and key functionalities. We'll discuss things like site structure, navigation and content requirements."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
+            animationSpeed={3}
             containerClassName="bg-emerald-900"
           />
         </Card>
@@ -27,12 +27,11 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
+            containerClassName="bg-fuchsia-900"
             colors={[
               [236, 72, 153],
               [232, 121, 249],
             ]}
-            dotSize={2}
           />
         </Card>
         <Card
