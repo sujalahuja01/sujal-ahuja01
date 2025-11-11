@@ -3,11 +3,20 @@ import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "../components/CanvasRevealEffect";
 
 const Approach = () => {
+  const [activeCard, setActiveCard] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveCard((prev) => (prev === index ? null : index));
+  };
+
   return (
     <section className="c-space mt-20 md:mt-30">
       <h2 className="text-heading">My Approach</h2>
       <div className="my-12 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
+          index={0}
+          activeCard={activeCard}
+          setActiveCard={handleToggle}
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
           description="We'll collaborate to map out your website's goals, target audience and key functionalities. We'll discuss things like site structure, navigation and content requirements."
@@ -19,6 +28,9 @@ const Approach = () => {
         </Card>
 
         <Card
+          index={1}
+          activeCard={activeCard}
+          setActiveCard={handleToggle}
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
           description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
@@ -34,6 +46,9 @@ const Approach = () => {
         </Card>
 
         <Card
+          index={2}
+          activeCard={activeCard}
+          setActiveCard={handleToggle}
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
           description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
@@ -49,19 +64,26 @@ const Approach = () => {
   );
 };
 
-const Card = ({ title, icon, children, description }) => {
-  const [hovered, setHovered] = useState(false);
+const Card = ({
+  index,
+  activeCard,
+  setActiveCard,
+  title,
+  icon,
+  children,
+  description,
+}) => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect mobile once on mount
   useEffect(() => {
-    const check = window.innerWidth < 768;
-    setIsMobile(check);
+    setIsMobile(window.innerWidth < 768);
   }, []);
+
+  const isActive = activeCard === index;
 
   const toggleHovered = (e) => {
     e?.stopPropagation?.();
-    setHovered((prev) => !prev);
+    setActiveCard(index);
   };
 
   const iconWithToggle = React.isValidElement(icon)
@@ -70,18 +92,17 @@ const Card = ({ title, icon, children, description }) => {
 
   return (
     <div
-      onMouseEnter={!isMobile ? () => setHovered(true) : undefined}
-      onMouseLeave={!isMobile ? () => setHovered(false) : undefined}
+      onMouseEnter={!isMobile ? () => setActiveCard(index) : undefined}
+      onMouseLeave={!isMobile ? () => setActiveCard(null) : undefined}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] max-w-sm w-full mx-auto p-4 relative lg:h-[35rem]"
     >
-      {/* Corner icons */}
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
       <AnimatePresence>
-        {hovered && (
+        {isActive && (
           <motion.div
             key="reveal"
             initial={{ opacity: 0 }}
@@ -95,17 +116,15 @@ const Card = ({ title, icon, children, description }) => {
       </AnimatePresence>
 
       <div className="relative z-20 text-center">
-        {/* Center icon */}
-        {!hovered && (
+        {!isActive && (
           <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-full flex justify-center">
             {iconWithToggle}
           </div>
         )}
 
-        {/* Title */}
         <h2
           className={`dark:text-white text-3xl font-bold text-black transition duration-200 ${
-            hovered
+            isActive
               ? "opacity-100 translate-y-0 text-white"
               : "opacity-0 translate-y-2"
           }`}
@@ -113,10 +132,9 @@ const Card = ({ title, icon, children, description }) => {
           {title}
         </h2>
 
-        {/* Description */}
         <p
           className={`text-sm mt-4 transition duration-200 ${
-            hovered
+            isActive
               ? "opacity-100 translate-y-0 text-[#e4ecff]"
               : "opacity-0 translate-y-2"
           }`}
