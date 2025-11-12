@@ -1,60 +1,24 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Flavor Flux",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "An AI-powered recipe web application built with React.js, Tailwind CSS, and Python, allowing users to input available ingredients and instantly generate creative, AI-driven recipes with a responsive and interactive interface.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Developed a full-stack application integrating AI APIs to generate unique recipe ideas based on user-provided ingredients.",
+      "Built the frontend with React.js and Tailwind CSS, ensuring smooth navigation and a responsive user experience.",
+      "Implemented authentication features including login, signup, and password recovery for secure user access.",
+      "Focused on usability and personalization, enabling users to discover creative meal ideas tailored to their available ingredients.",
+      "Demonstrated seamless front-end and back-end integration with efficient AI response handling for an intuitive cooking assistant experience.",
     ],
-    href: "",
+    href: "flavorflux.vercel.app",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/flavor.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Authentication & Authorization System",
-    description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
-    subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/auth-system.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Vite",
+        path: "/assets/logos/vite.svg",
       },
       {
         id: 2,
@@ -63,8 +27,51 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 4,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 5,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "MovieVerse",
+    description:
+      "A React-based movie discovery web application that integrates APIs to fetch real-time movie data, showcasing the top 20 movies worldwide and tracking user search trends for personalized recommendations.",
+    subDescription: [
+      "Built with React, Tailwind CSS, and JavaScript to create a clean, responsive, and user-friendly interface for effortless movie exploration.",
+      "Integrated external APIs to fetch live movie data and display trending and top-rated films globally.",
+      "Implemented search functionality to track user trends and deliver personalized movie recommendations.",
+      "Focused on dynamic UI design, responsiveness, and smooth data handling to enhance overall user engagement.",
+      "Demonstrated strong front-end development and API integration skills through a visually appealing, interactive platform.",
+    ],
+    href: "https://movie-verse-mxml.onrender.com",
+    logo: "",
+    image: "/assets/projects/movie.png",
+    tags: [
+      {
+        id: 1,
+        name: "appwrite",
+        path: "/assets/logos/true.png",
+      },
+      {
+        id: 2,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 4,
@@ -75,33 +82,33 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Brainwave",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "An AI-powered web application built using React.js and Tailwind CSS, showcasing a futuristic and interactive user interface with smooth animations and responsive layouts.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Developed an engaging and modern frontend using React.js with advanced animation techniques for a dynamic user experience.",
+      "Implemented responsive design principles with Tailwind CSS to ensure seamless performance across all devices.",
+      "Focused on aesthetic balance, interactivity, and motion effects to enhance user engagement.",
+      "Optimized for performance and accessibility, demonstrating the potential of modern front-end technologies in building AI-inspired interfaces.",
     ],
-    href: "",
+    href: "https://brainwave-five-pi.vercel.app/",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/brainwave.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "HTML5",
+        path: "/assets/logos/html5.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Vite",
+        path: "/assets/logos/vite.svg",
       },
       {
         id: 4,
@@ -112,112 +119,29 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Snake Game",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "A classic Snake game built in Python using Tkinter for the graphical interface, featuring interactive gameplay where players control a snake that grows by eating food and ends the game upon collision.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Developed using Python and Tkinter to create a simple yet engaging graphical user interface.",
+      "Implemented core game mechanics including movement, growth, collision detection, and scoring.",
+      "Handled real-time user input through event-driven programming for responsive gameplay.",
+      "Designed an intuitive layout with smooth controls and dynamic score updates.",
+      "Demonstrated strong problem-solving and logical thinking skills in building an interactive desktop application.",
     ],
-    href: "",
+    href: "https://github.com/sujalahuja01/snake-game.git",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/snake.jpg",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "Python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "tKinter",
+        path: "/assets/logos/tk.svg",
       },
     ],
   },
@@ -227,19 +151,19 @@ export const mySocials = [
   {
     id: 1,
     name: "GitHub",
-    href: "",
+    href: "https://github.com/sujalahuja01",
     icon: "/assets/socials/git.svg",
   },
   {
     id: 2,
     name: "Linkedin",
-    href: "",
+    href: "www.linkedin.com/in/sujalahuja",
     icon: "/assets/socials/link.svg",
   },
   {
     id: 3,
     name: "Instagram",
-    href: "",
+    href: "https://www.instagram.com/_sujal_ahuja_",
     icon: "/assets/socials/insta.svg",
   },
 ];

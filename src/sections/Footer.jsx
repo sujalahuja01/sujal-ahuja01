@@ -4,7 +4,7 @@ import MagicButton from "../components/MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-30  pb-10" id="contact">
+    <footer className="w-full mt-20 md:mt-30 pb-10" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="font-bold text-4xl md:text-5xl text-center lg:max-w-[45vw]">
           Ready to take <span className="text-[#CBACF9]">your</span> digital
@@ -14,7 +14,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="mailto:sujalahuja150@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -33,7 +33,9 @@ const Footer = () => {
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <img src={info.icon} alt="icons" width={20} height={20} />
+              <a href={info.href}>
+                <img src={info.icon} alt="icons" width={20} height={20} />
+              </a>
             </div>
           ))}
         </div>

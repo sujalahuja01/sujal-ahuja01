@@ -1,10 +1,15 @@
 import { motion } from "motion/react";
-const Card = ({ style, text, image, containerRef }) => {
+
+const Card = ({ style, text, image, containerRef, size = "4rem" }) => {
   return image && !text ? (
     <motion.img
-      className="absolute w-15 cursor-grab"
+      className="absolute cursor-grab object-contain"
       src={image}
-      style={style}
+      style={{
+        width: size,
+        height: "auto",
+        ...style,
+      }}
       whileHover={{ scale: 1.05 }}
       drag
       dragConstraints={containerRef}

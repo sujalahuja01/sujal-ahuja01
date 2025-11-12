@@ -61,18 +61,27 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/js-pink.png"
               containerRef={grid2Container}
+              size="5rem"
+            />
+            <Card
+              style={{ rotate: "10deg", top: "20%", left: "85%" }}
+              image="assets/logos/tail-pink.png"
+              containerRef={grid2Container}
+              size="5rem"
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/py-pink.png"
               containerRef={grid2Container}
+              size="8rem"
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/react-pink.png"
               containerRef={grid2Container}
+              size="5rem"
             />
           </div>
         </div>
