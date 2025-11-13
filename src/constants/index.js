@@ -97,8 +97,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 2,

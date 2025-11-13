@@ -7,7 +7,7 @@ const Approach = () => {
   const [activeIndex, setActiveIndex] = React.useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex((prev) => (prev === index ? null : index)); // only one open at a time
+    setActiveIndex((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -106,13 +106,11 @@ const Card = ({
       onClick={() => isTouchDevice && setActiveIndex(isActive ? null : index)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] max-w-sm w-full mx-auto p-4 relative lg:h-[35rem]"
     >
-      {/* Corner Icons */}
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
-      {/* Background Animation */}
       <AnimatePresence>
         {isActive && (
           <motion.div
@@ -126,7 +124,6 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      {/* Foreground Content */}
       <div className="relative z-20 text-center transition duration-200 w-full flex flex-col items-center justify-center">
         <div
           className={`transition duration-200 ${
