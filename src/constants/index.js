@@ -22,21 +22,16 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
         name: "Python",
         path: "/assets/logos/python.svg",
       },
       {
-        id: 4,
+        id: 3,
         name: "JavaScript",
         path: "/assets/logos/javascript.svg",
       },
       {
-        id: 5,
+        id: 4,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
