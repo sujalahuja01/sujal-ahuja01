@@ -140,6 +140,41 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 5,
+    title: "Blog-Portfolio",
+    description:
+      "A personal portfolio website designed to showcase professional expertise, featured projects, client testimonials, and technical blogs. Built with a modern frontend stack, the site focuses on clean design, smooth interactions, and clear content structure to present skills and work in a polished, professional manner.",
+    subDescription: [
+      " Designed and developed a responsive portfolio interface highlighting expertise, projects, testimonials, and blog content.",
+
+      "Implemented modern UI patterns and smooth animations to create an engaging and intuitive browsing experience.",
+
+      "Structured content sections for clarity and scalability, allowing easy expansion of projects and articles.",
+
+      "Focused on visual hierarchy and usability to effectively communicate personal brand and technical skills.",
+    ],
+    href: "https://test-project-three-puce.vercel.app/",
+    logo: "",
+    image: "/assets/projects/port.png",
+    tags: [
+      {
+        id: 1,
+        name: "Vite",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "tKinter",
+        path: "/assets/logos/tk.svg",
+      },
+      {
+        id: 2,
+        name: "tKinter",
+        path: "/assets/logos/tk.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [
