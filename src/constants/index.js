@@ -158,20 +158,20 @@ export const myProjects = [
     logo: "",
     image: "/assets/projects/port.png",
     tags: [
-      {
+     {
         id: 1,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 2,
+        name: "HTML5",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 3,
         name: "Vite",
-        path: "/assets/logos/python.svg",
-      },
-      {
-        id: 2,
-        name: "tKinter",
-        path: "/assets/logos/tk.svg",
-      },
-      {
-        id: 2,
-        name: "tKinter",
-        path: "/assets/logos/tk.svg",
+        path: "/assets/logos/vite.svg",
       },
     ],
   },
