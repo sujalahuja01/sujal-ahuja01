@@ -112,8 +112,43 @@ export const myProjects = [
       },
     ],
   },
-  {
+   {
     id: 4,
+    title: "Psycho Art",
+    description:
+      "A modern NFT marketplace website designed to create, showcase, and sell digital art. The platform highlights featured NFTs and top creators through a visually rich interface, focusing on discoverability, aesthetics, and smooth user interaction.",
+    subDescription: [
+ "Designed a visually driven interface with a strong focus on creativity, layout composition, and artistic expression.",
+
+    "Implemented smooth transitions and interactive elements to enhance user engagement and storytelling.",
+
+    "Built a responsive layout ensuring consistent visual impact across desktop and mobile devices.",
+
+    "Emphasized modern design principles, including typography, spacing, and color balance, to create a memorable portfolio experience."
+    ],
+    href: "https://psycho-art.vercel.app/",
+    logo: "",
+    image: "/assets/projects/port.png",
+    tags: [
+     {
+        id: 1,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 2,
+        name: "HTML5",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 3,
+        name: "Vite",
+        path: "/assets/logos/vite.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "Snake Game",
     description:
       "A classic Snake game built in Python using Tkinter for the graphical interface, featuring interactive gameplay where players control a snake that grows by eating food and ends the game upon collision.",
@@ -141,7 +176,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Blog-Portfolio",
     description:
       "A personal portfolio website designed to showcase professional expertise, featured projects, client testimonials, and technical blogs. Built with a modern frontend stack, the site focuses on clean design, smooth interactions, and clear content structure to present skills and work in a polished, professional manner.",
