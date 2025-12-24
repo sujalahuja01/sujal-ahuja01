@@ -112,41 +112,41 @@ export const myProjects = [
       },
     ],
   },
-   {
-    id: 4,
-    title: "Psycho Art",
-    description:
-      "A modern NFT marketplace website designed to create, showcase, and sell digital art. The platform highlights featured NFTs and top creators through a visually rich interface, focusing on discoverability, aesthetics, and smooth user interaction.",
-    subDescription: [
- "Designed a visually driven interface with a strong focus on creativity, layout composition, and artistic expression.",
+ //   {
+ //    id: 4,
+ //    title: "Psycho Art",
+ //    description:
+ //      "A modern NFT marketplace website designed to create, showcase, and sell digital art. The platform highlights featured NFTs and top creators through a visually rich interface, focusing on discoverability, aesthetics, and smooth user interaction.",
+ //    subDescription: [
+ // "Designed a visually driven interface with a strong focus on creativity, layout composition, and artistic expression.",
 
-    "Implemented smooth transitions and interactive elements to enhance user engagement and storytelling.",
+ //    "Implemented smooth transitions and interactive elements to enhance user engagement and storytelling.",
 
-    "Built a responsive layout ensuring consistent visual impact across desktop and mobile devices.",
+ //    "Built a responsive layout ensuring consistent visual impact across desktop and mobile devices.",
 
-    "Emphasized modern design principles, including typography, spacing, and color balance, to create a memorable portfolio experience."
-    ],
-    href: "https://psycho-art.vercel.app/",
-    logo: "",
-    image: "/assets/projects/port.png",
-    tags: [
-     {
-        id: 1,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "Vite",
-        path: "/assets/logos/vite.svg",
-      },
-    ],
-  },
+ //    "Emphasized modern design principles, including typography, spacing, and color balance, to create a memorable portfolio experience."
+ //    ],
+ //    href: "https://psycho-art.vercel.app/",
+ //    logo: "",
+ //    image: "/assets/projects/port.png",
+ //    tags: [
+ //     {
+ //        id: 1,
+ //        name: "JavaScript",
+ //        path: "/assets/logos/javascript.svg",
+ //      },
+ //      {
+ //        id: 2,
+ //        name: "HTML5",
+ //        path: "/assets/logos/html5.svg",
+ //      },
+ //      {
+ //        id: 3,
+ //        name: "Vite",
+ //        path: "/assets/logos/vite.svg",
+ //      },
+ //    ],
+ //  },
   {
     id: 5,
     title: "Snake Game",
