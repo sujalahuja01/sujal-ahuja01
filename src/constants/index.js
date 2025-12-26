@@ -128,7 +128,7 @@ export const myProjects = [
     ],
     href: "https://psycho-art.vercel.app/",
     logo: "",
-    image: "/assets/projects/psucho.png",
+    image: "/assets/projects/psycho.png",
     tags: [
      {
         id: 1,
