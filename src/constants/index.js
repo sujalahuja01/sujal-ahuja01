@@ -11,7 +11,7 @@ export const myProjects = [
       "Focused on usability and personalization, enabling users to discover creative meal ideas tailored to their available ingredients.",
       "Demonstrated seamless front-end and back-end integration with efficient AI response handling for an intuitive cooking assistant experience.",
     ],
-    href: "flavorflux.vercel.app",
+    href: "https://flavorflux.vercel.app",
     logo: "",
     image: "/assets/projects/flavor.png",
     tags: [
